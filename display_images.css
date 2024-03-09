@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+
+/* CARD */
+.card {
+    width: 260px; /* set a fixed width */
+    height: 280px; /* set a fixed height */
+    margin-bottom: 20px; /* add margin bottom */
+}
+
+.card:hover {
+    outline: 1.5px solid #158172;
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); */
+}
+
+
+.card img {
+    object-fit: cover; /* maintain aspect ratio and cover the card */
+    height: 120px; /* set the image height */
+    width: 100%; /* set the image width */
+}
+
+.card-body {
+    padding: 10px;
+    text-align: left; /* align text to the left */
+}
+
+.card-title,
+.card-text {
+    margin-top: 3px; /* remove margin for title and text */
+    /* line-height: 0.5; */
+}
+
+.card-text {
+    margin-top: 0px; /* keep the margin-top */
+    margin-bottom: 0px; /* add margin-bottom to create space */
+    line-height: 1.2; /* adjust line height if needed */
+}
+
+
+/* BODY */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* CSS for centering the heading */
+h1 {
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #158172;
+}
+
+
+.content-wrapper {
+    flex: 1;
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #158172;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #1d7d70;
+    box-sizing: border-box;
+}
+
+
+.footer small {
+    color: white;
+    display: block;
+    font-size: 12px;
+}
+
+.footer span {
+    color: #0fddc2;
+    font-weight: 650;
+}
+
+
+/* DOG TOP PART */
+
+.section {
+    width: 100%;
+    height: 50vh; 
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('dogs-homepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* HEADER NAVBAR */
+
+.navbar {
+    background-color: #f0f0f0 !important;
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.navbar-nav .nav-link {
+    color: #1d7d70; 
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 600;
+    line-height: 15px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+.navbar-brand {
+    color: #1d7d70;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #1d7d70; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #04473e; /* Change text color on hover to blue */
+}
+
+/* COLLAPSABLE BUTTON */
+.navbar-toggler {
+    background-color: #ababab;
+    width: 55px;
+    height: 30px;
+    border: none;
+}
+
+.navbar-toggler:hover {
+    background-color: #ffffff;
+    border: none;
+}
+
+
+/* MODAL PART *//* Display the modal in the center of the screen */
+.modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 1001;
+    border-radius: 5px;
+    text-align: center; 
+    display: none;
+    max-width: 90vw; /* Adjust the maximum width as needed */
+    max-height: 90vh; /* Adjust the maximum height as needed */
+    overflow: hidden;
+}
+
+/* Overlay to cover the entire screen */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+/* Active class to show the modal and overlay */
+.modal-content.active,
+.modal-overlay.active {
+    display: block;
+}
+
+/* Ensure images fit inside the modal */
+.modal-content img {
+    max-width: 90vw; /* Set maximum width to 90vw (90% of the viewport width) */
+    max-height: 90vh; /* Set maximum height to 90vh (90% of the viewport height) */
+    height: auto; /* Allow image to adjust height while maintaining aspect ratio */
+    width: auto; /* Allow image to adjust width while maintaining aspect ratio */
+    margin: auto; /* Center the image horizontally */
+    display: block; /* Ensure the image is displayed as a block element */
+}

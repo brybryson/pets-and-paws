@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+.container-form h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #158172 !important;
+}
+
+.container-form h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #158172 !important;
+}
+
+
+/* BODY */
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+/* FOOTER */
+.footer {
+    background-color: #158172;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-top: 1px solid #1d7d70;
+    box-sizing: border-box;
+}
+
+
+.footer small {
+    color: white;
+    display: block;
+    font-size: 12px;
+}
+
+.footer span {
+    color: #0fddc2;
+    font-weight: 650;
+}
+
+
+
+/* DOG TOP PART */
+.content-wrapper {
+    flex: 1;
+}
+
+.section {
+    width: 100%;
+    height: 30vh; 
+}
+
+.img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('dogs-homepage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* HEADER */
+.navbar {
+    position: fixed;
+    background-color: #158172; /* Blue color */
+    box-shadow: 0 2px 40px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-link {
+    color: #1d7d70; 
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 600;
+    line-height: 15px;
+    margin-right: 40px;
+    font-size: 15px;
+}
+
+
+.navbar-brand {
+    color: #1d7d70 !important;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+.navbar-brand:hover {
+    color: #1d7d70; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #04473e; 
+}
+
+/* COLLAPSABLE BUTTON */
+.navbar-toggler {
+    background-color: #ababab;
+    width: 55px;
+    height: 30px;
+    border: none;
+}
+
+.navbar-toggler:hover {
+    background-color: #ffffff;
+    border: none;
+}
+
+/* UPDATED */
+
+
+h2{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+
+h2, h3, h5, h6, p{
+    color: #158172;
+}
+
+/* UPDATED CONTENT */
+.content {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+
+/* UPDATED CONTAINER */
+.container-form {
+    background-color: white;
+    width: 100%;
+    padding: 28px;
+    margin: 0 auto; /* Center the container horizontally */
+    box-shadow: 0 15px 15px #ABB2B9;
+    flex-grow: 1; /* Allow the container to grow to fill the available space */
+}
+
+/* Adjust body padding to account for the fixed header and footer */
+body {
+    padding-top: 0px; /* Add padding for the fixed header */
+    padding-bottom: 00px; /* Add padding for the fixed footer */
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.content .text-field:nth-child(4) input {
+    width: 150px; 
+}
+
+.content .text-field:nth-child(1) input, 
+.content .text-field:nth-child(2) input,
+.content .text-field:nth-child(3) input {
+    width: 335px; 
+}
+
+.content .text-field:nth-child(5) input{
+    width: 320px; 
+}
+
+.content .text-field:nth-child(6) input {
+    width: 260px; 
+}
+
+.content .text-field:nth-child(7) input {
+    width: 200px; 
+}
+.content .text-field:nth-child(8) input {
+    width: 340px; 
+}
+
+
+.text-field, .select{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50;
+    padding-bottom: 12px;
+}
+
+.content .text-field input:nth-child(7){
+    width: 50px;
+}
+
+.text-field label, .select label{
+    margin-bottom: 5px;
+    width: max-content;
+}
+
+.text-field  input, .select select{
+    height: 40px;
+    width: 280px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 2px solid #158172;
+    outline: none;
+}
+
+.address{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.address .text-field input, .select select{
+    width: 240px;
+}
+
+.occupation, .pet_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.pet_details .select select{
+    width: 280px;
+}
+
+.address_occupation{
+    display: flex;
+    gap: 40px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.pet_condition .text-field {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align items to the start */
+    padding-bottom: 12px;
+}
+
+.pet_condition .text-field input {
+    /* position: relative; */
+    height: 260px;
+    width: 850px;
+    padding-bottom: 190px; /* Add padding to the top */
+    padding-left: 10px; /* Add padding to the left */
+    display: flex;
+  
+    overflow-y:scroll; /* Add a scrollbar when content overflows */
+    resize: horizontal; /* Allow vertical resizing */
+}
+
+.radio{
+    margin-top: 15px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.radio label{
+    padding: 0 20px 0 5px;
+    font-size: 18px;
+}
+
+.radio input[type="radio"], .radio_completed input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px; 
+    height: 15px; 
+    border-radius: 5px; 
+    border: 2px solid #158172; 
+    outline: none;
+}
+
+.radio input[type="radio"]:checked, .radio_completed input[type="radio"]:checked {
+    background-color: #158172; 
+}
+
+.fav_place{
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.fav_place label{
+    padding: 0 20px 0 5px;
+    font-size: 18px;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.pet_info_content, .family_housing, .landlord{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.pet_info_content .text-field input {
+    width: 450px;
+}
+
+.occupation .text-field input {
+    width: 330px;
+}
+
+.family_housing .text-field input{
+    width: 275px;
+}
+
+.family_housing .text-field input, .family_housing label, h6 {
+    margin-left: 15px;
+}
+
+.family_housing .text-field:nth-child(5) input,
+.family_housing .text-field:nth-child(10) input,
+.family_housing .text-field:nth-child(15) input,
+.family_housing .text-field:nth-child(20) input{
+    width: 80px;
+}
+
+.pet_info_content .text-field:nth-child(4) input,
+.pet_info_content .text-field:nth-child(5) input {
+    width: 165px; 
+}
+
+.pet_info_content .text-field:nth-child(6) input {
+    width: 1020px; 
+}
+
+.question_row{
+    margin: 0 0 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+h4{
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 18px;
+} 
+
+.question_row input{
+    height: 40px;
+    width: 100px;
+    margin: 20px 0 0 50px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 2px solid #158172;
+    outline: none;
+}
+
+.landlord, .indent{
+    padding: 0;
+    margin: 0 20px 20px;
+}
+
+.landlord .text-field input{
+    width: 440px;
+}
+
+.indent .text-field input{
+    width: 500px;
+}
+
+.indent label{
+    margin-top: 10px;
+}
+
+.completed{
+    display: flex;
+}
+
+.radio_completed, h6{
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+input[type="submit"] {
+    font-weight: 600;
+    border-radius: 9px;
+    padding: 10px 20px;
+    background-color: #158172; 
+    color: white; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 4px rgba(72, 47, 47, 0.5); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Pet Photo "Choose file" Text Color */
+.text-field input[type="file"]::-webkit-file-upload-button {
+    background-color: none;
+    border: none;
+    font-weight: 450;
+    height: 100%;
+    margin-right: 20px;
+    color: #000000;
+}
